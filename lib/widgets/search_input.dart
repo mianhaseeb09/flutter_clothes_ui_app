@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class SearchInput extends StatelessWidget {
   final tagsList = ['Woman', 'T-Shirts', 'Dress'];
 
+   SearchInput({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -52,7 +54,7 @@ class SearchInput extends StatelessWidget {
                           padding: const EdgeInsets.all(10.0),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: Theme.of(context).accentColor),
+                              color: Theme.of(context).selectedRowColor),
                           child: Text(
                             e,
                             style: const TextStyle(color: Colors.grey),

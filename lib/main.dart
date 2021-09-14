@@ -21,9 +21,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         backgroundColor: const Color(0xFFFAFAFA),
         primaryColor:const Color(0xFFFBD000),
-        accentColor: const Color(0xFFFFEBC7),
+        selectedRowColor: const Color(0xFFFFEBC7),
       ),
-      home: const HomeScreen(),
+      home:  HomeScreen(),
     );
   }
 }

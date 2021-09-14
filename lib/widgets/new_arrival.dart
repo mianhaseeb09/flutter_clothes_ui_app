@@ -6,6 +6,8 @@ import 'package:flutter_clothes_app/widgets/clothes_item.dart';
 class NewArrival extends StatelessWidget {
   final clothesList = Clothes.generateClothes();
 
+   NewArrival({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(

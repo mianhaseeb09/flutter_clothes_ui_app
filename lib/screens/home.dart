@@ -5,7 +5,9 @@ import 'package:flutter_clothes_app/widgets/new_arrival.dart';
 import 'package:flutter_clothes_app/widgets/search_input.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+ final bottomList=['home','menu','heart','user'];
+
+   HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +24,15 @@ class HomeScreen extends StatelessWidget {
 
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed,
+        items: bottomList.map((e)=>BottomNavigationBarItem(
+            label: e,
+            icon: Image.asset('assets/icons/$e.png',width: 25.0,)
+        )).toList(),
       ),
     );
   }

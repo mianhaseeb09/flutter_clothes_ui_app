@@ -13,7 +13,7 @@ class BestSell extends StatelessWidget {
           title: 'Best of Sell',
         ),
         Card(
-          margin: const EdgeInsets.symmetric(horizontal: 25.0),
+          margin: const EdgeInsets.symmetric(horizontal: 25.0,vertical: 10.0),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15.0),
           ),
